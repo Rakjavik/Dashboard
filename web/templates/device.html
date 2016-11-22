@@ -1,0 +1,11 @@
+<label>Device Name</label>
+<div><span ng-bind="device.address.hostname"></span></div>
+<label>Device IP</label>
+<div><span ng-bind="device.address.ip"></span></div>
+
+<table>
+    <th>Port</th>
+    <tr ng-repeat="port in device.ports" ng-show="port.isOpen">
+        <td>{{port.port}}</td>
+    </tr>
+</table>

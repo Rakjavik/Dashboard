@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Home Dashboard</title>
+</head>
+<body>
+<div ng-app="dashboard" ng-controller="DashController">
+    <div ng-repeat="device in devices">
+        <device-list></device-list>
+    </div>
+</div>
+</body>
+<script src="/js/lib/angular.js"></script>
+<script src="/js/dashboard.js"></script>
+<script src="/js/lib/ui-bootstrap-tpls-2.2.0.js"></script>
+</html>
